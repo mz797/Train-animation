@@ -1,0 +1,457 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.star {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: beige;
+  opacity: 0.3;
+  box-shadow: 0 0 20px beige;
+  -webkit-animation: stars 5s infinite;
+          animation: stars 5s infinite;
+}
+.star:nth-child(2n) {
+  -webkit-animation: stars 5s 1s infinite;
+          animation: stars 5s 1s infinite;
+}
+.star:nth-child(3n) {
+  -webkit-animation: stars 5s 3s infinite;
+          animation: stars 5s 3s infinite;
+}
+
+._1star {
+  top: 10%;
+  left: 10%;
+}
+
+._2star {
+  top: 70%;
+  left: 20%;
+}
+
+._3star {
+  top: 50%;
+  left: 30%;
+}
+
+._4star {
+  top: 60%;
+  left: 75%;
+}
+
+._5star {
+  top: 70%;
+  left: 40%;
+}
+
+._6star {
+  top: 80%;
+  left: 10%;
+}
+
+._7star {
+  top: 25%;
+  left: 90%;
+}
+
+._8star {
+  top: 30%;
+  left: 65%;
+}
+
+._9star {
+  top: 15%;
+  left: 47%;
+}
+
+._10star {
+  top: 40%;
+  left: 82%;
+}
+
+._11star {
+  top: 78%;
+  left: 90%;
+}
+
+._12star {
+  top: 20%;
+  left: 34%;
+}
+
+._13star {
+  top: 45%;
+  left: 5%;
+}
+
+._14star {
+  top: 10%;
+  left: 10%;
+}
+
+._15star {
+  top: 3%;
+  left: 56%;
+}
+
+._16star {
+  top: 7%;
+  left: 74%;
+}
+
+._17star {
+  top: 95%;
+  left: 70%;
+}
+
+._18star {
+  top: 25%;
+  left: 25%;
+}
+
+._19star {
+  top: 55%;
+  left: 15%;
+}
+
+._20star {
+  top: 66%;
+  left: 86%;
+}
+
+@-webkit-keyframes stars {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.8);
+    background-color: rgb(244, 240, 142);
+    box-shadow: 0 0 30px rgb(244, 244, 146);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes stars {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.8);
+    background-color: rgb(244, 240, 142);
+    box-shadow: 0 0 30px rgb(244, 244, 146);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(95, 85, 85);
+}
+
+.sky {
+  position: relative;
+  height: 50vh;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.moon {
+  position: absolute;
+  top: 10vh;
+  left: 10%;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px beige;
+  background-color: beige;
+}
+
+.cloud {
+  position: absolute;
+  height: 25px;
+  width: 100px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: darkgrey;
+  opacity: 0.3;
+}
+.cloud::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: darkgrey;
+}
+.cloud::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 8px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: darkgrey;
+}
+
+.first-cloud {
+  top: 10%;
+  left: 100px;
+  -webkit-animation: cloud 20s linear infinite;
+          animation: cloud 20s linear infinite;
+}
+
+.second-cloud {
+  top: 50%;
+  left: -300px;
+  -webkit-animation: cloud 20s linear 6s infinite;
+          animation: cloud 20s linear 6s infinite;
+}
+
+.third-cloud {
+  top: 70%;
+  left: -300px;
+  -webkit-animation: cloud 20s linear 3s infinite;
+          animation: cloud 20s linear 3s infinite;
+}
+
+.fourth-cloud {
+  top: 40%;
+  left: -300px;
+  -webkit-animation: cloud 20s linear 8s infinite;
+          animation: cloud 20s linear 8s infinite;
+}
+
+.fifth-cloud {
+  top: 30%;
+  left: -300px;
+  -webkit-animation: cloud 20s linear 12s infinite;
+          animation: cloud 20s linear 12s infinite;
+}
+
+.sixth-cloud {
+  top: 70%;
+  left: -300px;
+  -webkit-animation: cloud 20s linear 14s infinite;
+          animation: cloud 20s linear 14s infinite;
+}
+
+.mountain {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  height: 400px;
+  width: 400px;
+  border-radius: 40px;
+  background-image: linear-gradient(-80deg, rgb(0, 0, 0), rgb(109, 109, 109));
+  overflow: hidden;
+}
+.mountain-shadow {
+  position: absolute;
+  bottom: 200px;
+  left: 20px;
+  transform: rotate(45deg);
+  height: 150%;
+  width: 150%;
+  background-color: rgb(61, 61, 61);
+}
+
+.bridge {
+  position: relative;
+  height: 50vh;
+  background-color: rgb(48, 43, 40);
+  overflow: hidden;
+}
+.bridge .pillar {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 80%;
+  width: 20%;
+  background-color: rgb(150, 150, 150);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.bridge .pillar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2%;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(39, 41, 38);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.bridge .first-pillar {
+  left: 0%;
+}
+.bridge .second-pillar {
+  left: 25%;
+}
+.bridge .third-pillar {
+  left: 50%;
+}
+.bridge .fourth-pillar {
+  left: 75%;
+}
+.bridge .fifth-pillar {
+  left: 100%;
+}
+.bridge .parallel-line {
+  position: absolute;
+  top: 5%;
+  height: 1%;
+  width: 100%;
+  background-color: rgb(33, 33, 33);
+}
+
+.train {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 500px;
+  font-size: 0;
+  -webkit-animation: train 8s ease-in infinite;
+          animation: train 8s ease-in infinite;
+}
+.train .motor {
+  position: absolute;
+  left: 300px;
+  height: 100%;
+  width: 99px;
+  border-radius: 10px;
+  border-top-right-radius: 40px;
+  border: 2px solid rgb(81, 81, 81);
+  border-top: 2px solid rgb(114, 113, 113);
+  background-color: rgb(62, 62, 62);
+}
+.train .light {
+  position: absolute;
+  left: 95px;
+  bottom: 0px;
+  width: 100px;
+  height: 30px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  background-image: linear-gradient(90deg, gold, rgba(255, 217, 0, 0.166));
+  box-shadow: 0 0 50px rgba(255, 217, 0, 0.668);
+  opacity: 0.5;
+}
+.train .window {
+  position: absolute;
+  top: 10%;
+  width: 20px;
+  height: 45%;
+  border-radius: 2px;
+  background-color: gold;
+  box-shadow: 0 0 3px gold;
+}
+.train .front-window {
+  right: 10px;
+  width: 30px;
+  border-top-right-radius: 100%;
+}
+.train .back-window {
+  right: 45px;
+  width: 25px;
+}
+.train .first-window {
+  right: 3px;
+}
+.train .second-window {
+  right: 26px;
+}
+.train .third-window {
+  right: 49px;
+}
+.train .door {
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+  height: 70%;
+  width: 15px;
+  border-radius: 2px;
+  background-color: #333;
+}
+.train .door-window {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11px;
+  height: 11px;
+  border-radius: 1px;
+  background-color: rgb(150, 126, 31);
+}
+.train .car {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 98px;
+  border-radius: 10px;
+  border: 2px solid rgb(81, 81, 81);
+  border-top: 2px solid rgb(114, 113, 113);
+  background-color: rgb(62, 62, 62);
+}
+.train .first-car {
+  left: 0px;
+}
+.train .second-car {
+  left: 100px;
+}
+.train .third-car {
+  left: 200px;
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+
+@keyframes cloud {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+@-webkit-keyframes train {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 150vw;
+  }
+}
+@keyframes train {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 150vw;
+  }
+}/*# sourceMappingURL=style.css.map */

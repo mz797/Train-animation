@@ -1,0 +1,113 @@
+.star {
+	position: absolute;
+	top: 5%;
+	left: 80%;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background-color: beige;
+	opacity: 0.3;
+	box-shadow: 0 0 20px beige;
+	animation: stars 5s infinite;
+
+	&:nth-child(2n) {
+		animation: stars 5s 1s infinite;
+	}
+	&:nth-child(3n) {
+		animation: stars 5s 3s infinite;
+	}
+}
+._1star {
+	top: 10%;
+	left: 10%;
+}
+._2star {
+	top: 70%;
+	left: 20%;
+}
+._3star {
+	top: 50%;
+	left: 30%;
+}
+._4star {
+	top: 60%;
+	left: 75%;
+}
+._5star {
+	top: 70%;
+	left: 40%;
+}
+._6star {
+	top: 80%;
+	left: 10%;
+}
+._7star {
+	top: 25%;
+	left: 90%;
+}
+._8star {
+	top: 30%;
+	left: 65%;
+}
+._9star {
+	top: 15%;
+	left: 47%;
+}
+._10star {
+	top: 40%;
+	left: 82%;
+}
+._11star {
+	top: 78%;
+	left: 90%;
+}
+._12star {
+	top: 20%;
+	left: 34%;
+}
+._13star {
+	top: 45%;
+	left: 5%;
+}
+._14star {
+	top: 10%;
+	left: 10%;
+}
+._15star {
+	top: 3%;
+	left: 56%;
+}
+._16star {
+	top: 7%;
+	left: 74%;
+}
+._17star {
+	top: 95%;
+	left: 70%;
+}
+._18star {
+	top: 25%;
+	left: 25%;
+}
+._19star {
+	top: 55%;
+	left: 15%;
+}
+._20star {
+	top: 66%;
+	left: 86%;
+}
+@keyframes stars {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.8);
+		background-color: rgb(244, 240, 142);
+		box-shadow: 0 0 30px rgb(244, 244, 146);
+		opacity: 0.6;
+	}
+	100% {
+		transform: scale(1);
+	}
+}
